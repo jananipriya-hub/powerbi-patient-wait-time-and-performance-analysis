@@ -25,10 +25,20 @@ Before building the charts, I used Power Query to clean up the raw data:
 * **Peak Time Heatmaps:** Matrix tables showing wait times broken down by days of the week and times of day to find the busiest hours.
 * **Operational Charts:** Bar charts and line graphs comparing total wait times against hospital names, urgency levels, and patient outcomes.
 
-## Insights & Recommendations
-* **Peak Hour Bottlenecks:** Patient wait times spike significantly during specific times of day and evening shifts, showing a clear need for better staff scheduling during those hours.
-* **Staffing Correlations:** Lower specialist availability and low nurse-to-patient ratios directly correlate with higher critical wait times. Hospital branches should adjust staff rotations based on these predictable weekday peaks to improve patient satisfaction.
+## Insights 
+1. **High Volume and Bottlenecks at Specific Branches:** Riverside Medical Center and Northside Community Hospital show the highest volume of patient cases, causing major tracking bottlenecks compared to smaller branches like Springfield or Summit Health.
+2. **Critical Wait Time Thresholds:** Patients classified under "Critical" urgency levels face a high volume of cases (over 1,740 records), stretching hospital resources thin during peak emergencies.
+3. **Low Satisfaction Drivers:** The average patient satisfaction score sits relatively low at **2.77 out of 5.00**, which directly correlates with the long wait times seen in the operational heatmaps.
+4. **Time of Day Variations:** Patient wait times and volume fluctuate significantly by shift, with clear spikes during the Afternoon and Evening blocks compared to Early Morning hours.
+5. **Varying Patient Outcomes:** A significant portion of the total patient volume results in actual hospital admissions ("Admitted") rather than quick discharges, meaning bed availability directly delays the triage process.
 
+## Recommendations
+1. **Allocate Resources to High-Volume Branches:** Increase staffing, beds, and desk clerks specifically at Riverside Medical Center and Northside Community Hospital to handle their disproportionately high patient loads.
+2. **Prioritize Critical Care Workflows:** Streamline the fast-track lane for the 1,740+ "Critical" status patients to reduce their average total wait time and improve emergency survival outcomes.
+3. **Target the 2.77 Satisfaction Score:** Implement feedback collection at discharge to find out if the low 2.77 score is caused by staff behavior or simply long wait times in the lobby.
+4. **Smooth Out Shift Transitions:** Deploy overlap shifts for nurses and specialists between afternoon and evening blocks to ensure patient processing doesn't stall during staff handovers.
+5. **Optimize Bed Management for Admissions:** Since a large number of patients end up admitted, connect the emergency room dashboard to the main hospital ward tracking system to speed up bed assignments.
+  
 ## How to Use It
 Download the `.pbix` file from this repository and open it in Power BI Desktop to interact with the filters.
 
